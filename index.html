@@ -1,8 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loader {
+  border: 16px solid black;
+  border-radius: 50%;
+  border-top: 16px solid #fbd214;
+  border-bottom: 16px solid #fbd214;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.center{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+
+}
+
+</style>
+</head>
+
     <meta http-equiv="refresh" content="0; url='https://dev-abrarulhaq.pantheonsite.io'" />
-  </head>
-  <body>
-  </body>
+
+
+<body style="background-color:black;">
+<div class="loader center"></div>
+
+</body>
 </html>
